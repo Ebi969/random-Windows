@@ -1,0 +1,65 @@
+
+$form = New-Object System.Windows.Forms.Form
+$form.Text = 'Data Entry Form'
+$form.Size = New-Object System.Drawing.Size(500,400)
+$form.MaximumSize = New-Object System.Drawing.Size(500,400)
+$form.MinimumSize = New-Object System.Drawing.Size(500,400)
+$form.StartPosition = 'CenterScreen'
+
+$OKButton = New-Object System.Windows.Forms.Button
+$OKButton.Location = New-Object System.Drawing.Point(75,275)
+$OKButton.Size = New-Object System.Drawing.Size(125,50)
+$OKButton.Text = 'Send'
+$OKButton.DialogResult = [System.Windows.Forms.DialogResult]::OK
+$form.AcceptButton = $OKButton
+$form.Controls.Add($OKButton)
+
+$CancelButton = New-Object System.Windows.Forms.Button
+$CancelButton.Location = New-Object System.Drawing.Point(275,275)
+$CancelButton.Size = New-Object System.Drawing.Size(125,50)
+$CancelButton.Text = 'Cancel'
+$CancelButton.DialogResult = [System.Windows.Forms.DialogResult]::Cancel
+$form.CancelButton = $CancelButton
+$form.Controls.Add($CancelButton)
+
+$reqlabel = New-Object System.Windows.Forms.Label
+$reqlabel.Location = New-Object System.Drawing.Point(10,20)
+$reqlabel.Size = New-Object System.Drawing.Size(400,50)
+$reqlabel.Text = 'Please enter the request number (SRS or CA) in the space below:'
+$form.Controls.Add($reqlabel)
+
+$reqTextBox = New-Object System.Windows.Forms.TextBox
+$reqTextBox.Location = New-Object System.Drawing.Point(100,80)
+$reqTextBox.Size = New-Object System.Drawing.Size(300,150)
+$form.Controls.Add($reqTextBox)
+
+$srvlabel = New-Object System.Windows.Forms.Label
+$srvlabel.Location = New-Object System.Drawing.Point(10,140)
+$srvlabel.Size = New-Object System.Drawing.Size(350,50)
+$srvlabel.Text = 'Please enter the server names in the space below: (Separate servers with a Comma)'
+$form.Controls.Add($srvlabel)
+
+$srvtextBox = New-Object System.Windows.Forms.TextBox
+$srvtextBox.Location = New-Object System.Drawing.Point(100,200)
+$srvtextBox.Size = New-Object System.Drawing.Size(300,150)
+$form.Controls.Add($srvtextBox)
+
+$form.Topmost = $true
+$form.MaximizeBox = $false
+
+#$form.Add_Shown({$textBox.Select()})
+$result = $form.ShowDialog()
+
+    if ($result -eq [System.Windows.Forms.DialogResult]::OK)
+        {
+            $requestNum = $reqTextBox.Text
+
+            $serverNamesPopup = $srvtextBox.Text
+            $requestNum
+            $serverNamesPopup
+            
+            $servArr = $serverNamesPopup.Split(',')
+            
+                checkExcel
+
+        }

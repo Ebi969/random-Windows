@@ -1,0 +1,392 @@
+﻿Index~Policy~Keyword~Baseline Setting
+WS2008-MSSB-01~Audit Account Logon Events~Audit account logon~Success and Failure
+WS2008-MSSB-02~Audit Account Management~Audit account management~Success and Failure
+WS2008-MSSB-03~Audit Directory Service Access~Audit DS access~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-04~Audit Object Access~Audit object access~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-05~Audit Policy Change~Audit policy change~IN_LIST 'Success','Success and Failure'
+WS2008-MSSB-06~Audit Privilege Use~Audit privilege use~IN_LIST 'Failure','Success and Failure'
+WS2008-MSSB-07~Audit Logon Events~Audit logon events~Success and Failure
+WS2008-MSSB-08~Audit Process Tracking~Audit process tracking~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-09~Audit System Events~Audit system events~IN_LIST 'Success','Success and Failure'
+WS2008-MSSB-10~Change the system time (SeSystemTimePrivilege)~Change the system time~BUILTIN\Administrators,NT AUTHORITY\LOCAL SERVICE
+WS2008-MSSB-11~Change the time zone (SeTimeZonePrivilege)~Change the time zone~BUILTIN\Administrators,NT AUTHORITY\LOCAL SERVICE
+WS2008-MSSB-12~Deny access to this computer from the network (SeDenyNetworkLogonRight)~Deny access to this computer from the network~NT AUTHORITY\ANONYMOUS LOGON,BUILTIN\Guests,Associate,MUD\SUPPORT_388945a0
+WS2008-MSSB-13~Deny log on as a batch job (SeDenyBatchLogonRight)~Deny log on as a batch job~NT AUTHORITY\ANONYMOUS LOGON,BUILTIN\Guests,Associate,MUD\SUPPORT_388945a0
+WS2008-MSSB-14~Deny log on as a service (SeDenyServiceLogonRight)~Deny log on as a service~NT AUTHORITY\ANONYMOUS LOGON,BUILTIN\Guests,Associate,MUD\SUPPORT_388945a0
+WS2008-MSSB-15~Deny log on locally (SeDenyInteractiveLogonRight)~Deny log on locally~NT AUTHORITY\ANONYMOUS LOGON,BUILTIN\Guests,Associate,MUD\SUPPORT_388945a0
+WS2008-MSSB-16~Deny log on through Terminal Services (SeDenyRemoteInteractiveLogonRight)~Deny log on through terminal services~NT AUTHORITY\ANONYMOUS LOGON,BUILTIN\Guests,Associate,MUD\SUPPORT_388945a0
+WS2008-MSSB-17~Generate security audits (SeAuditPrivilege)~Generate security audits~NT AUTHORITY\NETWORK SERVICE,NT AUTHORITY\LOCAL SERVICE
+WS2008-MSSB-18~Replace a process level token (SeAssignPrimaryTokenPrivilege)~Replace a process level token~NT AUTHORITY\NETWORK SERVICE,NT AUTHORITY\LOCAL SERVICE
+WS2008-MSSB-19~Accounts: Administrator account status~Administrator account status~1
+WS2008-MSSB-20~Accounts: Rename administrator account~Rename administrator account~Praetor
+WS2008-MSSB-21~Accounts: Guest account status~Guest account status~0
+WS2008-MSSB-22_1~Accounts: Limit local account use of blank passwords to console logon only~HKLM\System\CurrentControlSet\Control\Lsa\LimitBlankPasswordUse~1
+WS2008-MSSB-22_2~Accounts: Rename guest account~Rename guest account~Associate
+WS2008-MSSB-23~Audit: Audit the access of global system objects~HKLM\System\CurrentControlSet\Control\Lsa\AuditBaseObjects~0
+WS2008-MSSB-24~Audit: Audit the use of Backup and Restore privilege~HKLM\System\CurrentControlSet\Control\Lsa\FullPrivilegeAuditing~0
+WS2008-MSSB-25~Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings~HKLM\System\CurrentControlSet\Control\Lsa\SCENoApplyLegacyAuditPolicy~1
+WS2008-MSSB-26~Audit: Shut down system immediately if unable to log security audits~HKLM\System\CurrentControlSet\Control\Lsa\CrashOnAuditFail~0
+WS2008-MSSB-27~Devices: Allow undock without having to log on~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\UndockWithoutLogon~0
+WS2008-MSSB-28~Devices: Allowed to format and eject removable media~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\AllocateDASD~0
+WS2008-MSSB-29~Devices: Prevent users from installing printer drivers~HKLM\System\CurrentControlSet\Control\Print\Providers\LanMan Print Services\Servers\AddPrinterDrivers~1
+WS2008-MSSB-30~Devices: Restrict CD-ROM access to locally logged-on user only~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\AllocateCDRoms:~0
+WS2008-MSSB-31~Devices: Restrict floppy access to locally logged-on user only~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\AllocateFloppies~0
+WS2008-MSSB-32~Domain member: Digitally encrypt or sign secure channel data (always)~HKLM\System\CurrentControlSet\Services\Netlogon\Parameters\RequireSignOrSeal~1
+WS2008-MSSB-33~Domain member: Digitally encrypt secure channel data (when possible)~HKLM\System\CurrentControlSet\Services\Netlogon\Parameters\SealSecureChannel~1
+WS2008-MSSB-34~Domain member: Digitally sign secure channel data (when possible)~HKLM\System\CurrentControlSet\Services\Netlogon\Parameters\SignSecureChannel~1
+WS2008-MSSB-35~Domain member: Disable machine account password changes~HKLM\System\CurrentControlSet\Services\Netlogon\Parameters\DisablePasswordChange~0
+WS2008-MSSB-36~Domain member: Maximum machine account password age~HKLM\System\CurrentControlSet\Services\Netlogon\Parameters\MaximumPasswordAge~30
+WS2008-MSSB-37~Domain member: Require strong (Windows 2000 or later) session key~HKLM\System\CurrentControlSet\Services\Netlogon\Parameters\RequireStrongKey~1
+WS2008-MSSB-38~Interactive logon: Do not display last user name~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\DontDisplayLastUserName~1
+WS2008-MSSB-39~Interactive logon: Do not require CTRL+ALT+DEL~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\DisableCAD~0
+WS2008-MSSB-40~Interactive logon: Message text for users attempting to log on~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\LegalNoticeText~This Facility is for the use by authorized users only and is subject, to the Sanlam Group's Information Security Policies, the content of which all users, are aware of and which can be found on the Group Intranet and/or the Intranet sites of the Group Companies., Users abusing the facility in any manner, including wrongful or, incorrect usage can be precluded from using the facility and be, subject to disciplinary action., All users accept and consent to the Sanlam Group's right to access, monitor, and intercept any user's electronic communication records in the, ordinary course of carrying on its business, provided there is, reasonable justification for such action., If such monitoring reveals possible evidence of wrongful or criminal, activity, such evidence will be provided to the relevant authorities., By Clicking on “OK” and logging onto this system indicates your, acceptance of all above-mentioned terms and conditions.
+WS2008-MSSB-41~Interactive logon: Message title for users attempting to log on~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\LegalNoticeCaption~Important Notice! Please read carefully before proceeding!
+WS2008-MSSB-42~Interactive logon: Number of previous logons to cache (in case domain controller is not available)~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\CachedLogonsCount~0
+WS2008-MSSB-43~Interactive logon: Prompt user to change password before expiration~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\PasswordExpiryWarning~IN_LIST '14','7','5'
+WS2008-MSSB-44~Interactive logon: Require Domain Controller authentication to unlock workstation~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\ForceUnlockLogon~1
+WS2008-MSSB-45~Microsoft network client: Digitally sign communications (always)~HKLM\System\CurrentControlSet\Services\LanManServer\Parameters\RequireSecuritySignature~0
+WS2008-MSSB-46~Microsoft network client: Digitally sign communications (if server agrees)~HKLM\System\CurrentControlSet\Services\LanManServer\Parameters\EnableSecuritySignature~1
+WS2008-MSSB-47~Microsoft network client: Send unencrypted password to third-party SMB servers~HKLM\System\CurrentControlSet\Services\LanmanWorkstation\Parameters\EnablePlainTextPassword~0
+WS2008-MSSB-48~Microsoft network server: Amount of idle time required before suspending session~HKLM\System\CurrentControlSet\Services\LanManServer\Parameters\AutoDisconnect~15
+WS2008-MSSB-49~Microsoft network server: Digitally sign communications (always)~HKLM\System\CurrentControlSet\Services\LanManServer\Parameters\RequireSecuritySignature~0
+WS2008-MSSB-50~Microsoft network server: Digitally sign communications (if client agrees)~HKLM\System\CurrentControlSet\Services\LanManServer\Parameters\EnableSecuritySignature~1
+WS2008-MSSB-51~Microsoft network server: Disconnect clients when logon hours expire~HKLM\System\CurrentControlSet\Services\LanManServer\Parameters\EnableForcedLogOff~1
+WS2008-MSSB-52~MSS: (AutoAdminLogon) Enable Automatic Logon (not recommended)~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\AutoAdminLogon~0
+WS2008-MSSB-53~MSS: (DisableIPSourceRouting) IP source routing protection level (protects against packet spoofing)~HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\DisableIPSourceRouting~2
+WS2008-MSSB-54~MSS: (EnableDeadGWDetect) Allow automatic detection of dead network gateways~HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\EnableDeadGWDetect~0
+WS2008-MSSB-55~MSS: (EnableICMPRedirect) Allow ICMP redirects to override OSPF generated routes~HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\EnableICMPRedirect~0
+WS2008-MSSB-56~MSS: (Hidden) Hide Computer From the Browse List (not recommended except for highly secure environments)~HKLM\System\CurrentControlSet\Services\Lanmanserver\Parameters\Hidden~0
+WS2008-MSSB-57~MSS: (KeepAliveTime) How often keep-alive packets are sent in milliseconds~HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\KeepAliveTime~300000
+WS2008-MSSB-58~MSS: (NoDefaultExempt) Configure IPSec exemptions for various types of network traffic.~HKLM\System\CurrentControlSet\Services\IPSEC\NoDefaultExempt~3
+WS2008-MSSB-59~MSS: (NoNameReleaseOnDemand) Allow the computer to ignore NetBIOS name release requests except from WINS servers~HKLM\System\CurrentControlSet\Services\Netbt\Parameters\NoNameReleaseOnDemand~1
+WS2008-MSSB-60~MSS: (NtfsDisable8dot3NameCreation) Enable the computer to stop generating 8.3 style filenames (recommended)~HKLM\System\CurrentControlSet\Control\FileSystem\NtfsDisable8dot3NameCreation~0
+WS2008-MSSB-61~MSS: (PerformRouterDiscovery) Allow IRDP to detect and configure Default Gateway addresses (could lead to DoS)~HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\PerformRouterDiscovery~0
+WS2008-MSSB-62~MSS: (SafeDllSearchMode) Enable Safe DLL search mode (recommended)~HKLM\System\CurrentControlSet\Control\Session Manager\SafeDllSearchMode~1
+WS2008-MSSB-63~MSS: (SynAttackProtect) Syn attack protection level (protects against DoS)~HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\SynAttackProtect~1
+WS2008-MSSB-64~MSS: (TCPMaxConnectResponseRetransmissions) SYN-ACK retransmissions when a connection request is not acknowledged~HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\TcpMaxConnectResponseRetransmissions~2
+WS2008-MSSB-65~MSS: (TcpMaxDataRetransmissions) How many times unacknowledged data is retransmitted (3 recommended, 5 is default)~HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\TcpMaxDataRetransmissions~3
+WS2008-MSSB-66~MSS: (TCPMaxPortsExhausted)~HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\TcpMaxPortsExhausted~5
+WS2008-MSSB-67~MSS: (DriverSigningPolicy)~HKLM\Software\Microsoft\Driver Signing\Policy~1
+WS2008-MSSB-68~MSS: (CrashControlAutoReboot)~HKLM\System\CurrentControlSet\Control\CrashControl\AutoReboot~1
+WS2008-MSSB-69~MSS: (NoDefaultAdminOwner)~HKLM\System\CurrentControlSet\Control\Lsa\NoDefaultAdminOwner~1
+WS2008-MSSB-70~MSS: (DisableSavePassword)~HKLM\System\CurrentControlSet\Services\RasMan\Parameters\DisableSavePassword~1
+WS2008-MSSB-71~MSS: (EnablePMTUDiscovery)~HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\EnablePMTUDiscovery~0
+WS2008-MSSB-72~MSS: (WarningLevel) Percentage threshold for the security event log at which the system will generate a warning~HKLM\System\CurrentControlSet\Services\Eventlog\Security\WarningLevel~90
+WS2008-MSSB-73~Network access: Allow anonymous SID/Name translation~Allow anonymous SID-Name translation~0
+WS2008-MSSB-74~Network access: Do not allow anonymous enumeration of SAM accounts~HKLM\System\CurrentControlSet\Control\Lsa\RestrictAnonymous~1
+WS2008-MSSB-75~Network access: Do not allow anonymous enumeration of SAM accounts and shares~HKLM\System\CurrentControlSet\Control\Lsa\RestrictAnonymousSAM~1
+WS2008-MSSB-76~Network access: Do not allow storage of credentials or .NET Passports for network authentication~HKLM\System\CurrentControlSet\Control\Lsa\DisableDomainCreds~1
+WS2008-MSSB-77~Network access: Let Everyone permissions apply to anonymous users~HKLM\System\CurrentControlSet\Control\Lsa\EveryoneIncludesAnonymous~0
+WS2008-MSSB-78~Network access: Remotely accessible registry paths~HKLM\System\CurrentControlSet\Control\SecurePipeServers\Winreg\AllowedPaths\Machine~IN_LIST '','Null Value','Null'
+WS2008-MSSB-79~Network access: Remotely accessible registry paths and sub paths~HKLM\System\CurrentControlSet\Control\SecurePipeServers\Winreg\AllowedExactPaths\Machine~IN_LIST '','Null Value','Null'
+WS2008-MSSB-80~Network access: Restrict anonymous access to Named Pipes and Shares~HKLM\System\CurrentControlSet\Services\LanManServer\Parameters\RestrictNullSessAccess~1
+WS2008-MSSB-81~Network access: Shares that can be accessed anonymously~HKLM\System\CurrentControlSet\Services\LanManServer\Parameters\NullSessionShares~IN_LIST '','Null Value','Null'
+WS2008-MSSB-82~Network access: Sharing and security model for local accounts~HKLM\System\CurrentControlSet\Control\Lsa\ForceGuest~0
+WS2008-MSSB-83~Network security: Do not store LAN Manager hash value on next password change~HKLM\System\CurrentControlSet\Control\Lsa\NoLMHash~1
+WS2008-MSSB-84~Network security: Force logoff when logon hours expire~HKLM\System\CurrentControlSet\Services\LanManServer\Parameters\EnableForcedLogOff~1
+WS2008-MSSB-85~Network security: LAN Manager authentication level~HKLM\System\CurrentControlSet\Control\Lsa\LmCompatibilityLevel~3
+WS2008-MSSB-86~Network security: LDAP client signing requirements~HKLM\System\CurrentControlSet\Services\LDAP\LDAPClientIntegrity~1
+WS2008-MSSB-87~Network security: Minimum session security for NTLM SSP based (including secure RPC) clients~HKLM\System\CurrentControlSet\Control\Lsa\MSV1_0\NTLMMinClientSec~537395200
+WS2008-MSSB-88~Network security: Minimum session security for NTLM SSP based (including secure RPC) servers~HKLM\System\CurrentControlSet\Control\Lsa\MSV1_0\NTLMMinServerSec~536870912
+WS2008-MSSB-89~Recovery console: Allow automatic administrative logon~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Setup\RecoveryConsole\SecurityLevel~0
+WS2008-MSSB-90~Recovery console: Allow floppy copy and access to all drives and all folders~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Setup\RecoveryConsole\SetCommand~0
+WS2008-MSSB-91~Shutdown: Allow system to be shut down without having to log on~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\ShutdownWithoutLogon~0
+WS2008-MSSB-92~Shutdown: Clear virtual memory pagefile~HKLM\System\CurrentControlSet\Control\Session Manager\Memory Management\ClearPageFileAtShutdown~IN_LIST '0','1'
+WS2008-MSSB-93~System cryptography: Force strong key protection for user keys stored on the computer~HKLM\Software\Policies\Microsoft\Cryptography\ForceKeyProtection~1
+WS2008-MSSB-94~System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing~HKLM\System\CurrentControlSet\Control\Lsa\FIPSAlgorithmPolicy\Enabled~0
+WS2008-MSSB-95~System objects: Require case insensitivity for non-Windows subsystems~HKLM\System\CurrentControlSet\Control\Session Manager\Kernel\ObCaseInsensitive~1
+WS2008-MSSB-96~System objects: Strengthen default permissions of internal system objects (e.g. Symbolic Links)~HKLM\System\CurrentControlSet\Control\Session Manager\ProtectionMode~1
+WS2008-MSSB-97~System settings: Optional subsystems~HKLM\System\CurrentControlSet\Control\Session Manager\SubSystems\optional~IN_LIST '','None','Null Value','Null'
+WS2008-MSSB-98~System settings: Use Certificate Rules on Windows Executables for Software Restriction Policies~HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\AuthenticodeEnabled~0
+WS2008-MSSB-99~User Account Control: Admin Approval Mode for the Built-in Administrator account~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\FilterAdministratorToken~0
+WS2008-MSSB-100~User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableUIADesktopToggle~0
+WS2008-MSSB-101~User Account Control: Behavior of the elevation prompt for Administrators in Admin Approval Mode~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\ConsentPromptBehaviorAdmin~IN_LIST '5','3','1'
+WS2008-MSSB-102~User Account Control: Behavior of the elevation prompt for standard users~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\ConsentPromptBehaviorUser~SETTING_NOT_DEFINED
+WS2008-MSSB-103~User Account Control: Detect application installations and prompt for elevation~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableInstallerDetection~0
+WS2008-MSSB-104~User Account Control: Only elevate executables that are signed and validated~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\ValidateAdminCodeSignatures~0
+WS2008-MSSB-105~User Account Control: Only elevate UIAccess applications that are installed in secure locations~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableSecureUIAPaths~0
+WS2008-MSSB-106~User Account Control: Run all Adminstrators in Admin Approval Mode~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA~0
+WS2008-MSSB-107~User Account Control: Switch to the secure desktop when prompting for elevation~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\PromptOnSecureDesktop~0
+WS2008-MSSB-108~User Account Control: Virtualize file and registry write failures to per-user locations~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableVirtualization~0
+WS2008-MSSB-109~Maximum application log size~HKLM\System\CurrentControlSet\Services\EventLog\Application\MaxSize~33554432
+WS2008-MSSB-110~Maximum security log size~HKLM\System\CurrentControlSet\Services\EventLog\Security\MaxSize~83886080
+WS2008-MSSB-111~Maximum system log size~HKLM\System\CurrentControlSet\Services\EventLog\System\MaxSize~33554432
+WS2008-MSSB-112~Retention method for application log~HKLM\System\CurrentControlSet\Services\EventLog\Application\Retention~0
+WS2008-MSSB-113~Retention method for security log~HKLM\System\CurrentControlSet\Services\EventLog\Security\Retention~0
+WS2008-MSSB-114~Retention method for system log~HKLM\System\CurrentControlSet\Services\EventLog\System\Retention~0
+WS2008-MSSB-115~Global Settings: Policy version~HKLM\Software\Policies\Microsoft\WindowsFirewall\PolicyVersion~522
+WS2008-MSSB-116~Domain Profile Settings: Firewall state~HKLM\Software\Policies\Microsoft\WindowsFirewall\DomainProfile\EnableFirewall~1
+WS2008-MSSB-117~Domain Profile Settings: Inbound connections~HKLM\Software\Policies\Microsoft\WindowsFirewall\DomainProfile\DefaultInboundAction~1
+WS2008-MSSB-118~Domain Profile Settings: Outbound connections~HKLM\Software\Policies\Microsoft\WindowsFirewall\DomainProfile\DefaultOutboundAction~0
+WS2008-MSSB-119~Domain Profile Settings: Apply local firewall rules~HKLM\Software\Policies\Microsoft\WindowsFirewall\DomainProfile\AllowLocalPolicyMerge~IN_LIST '0','1'
+WS2008-MSSB-120~Private Profile Settings: Firewall state~HKLM\Software\Policies\Microsoft\WindowsFirewall\PrivateProfile\EnableFirewall~1
+WS2008-MSSB-121~Private Profile Settings: Inbound connections~HKLM\Software\Policies\Microsoft\WindowsFirewall\PrivateProfile\DefaultInboundAction~1
+WS2008-MSSB-122~Private Profile Settings: Outbound connections~HKLM\Software\Policies\Microsoft\WindowsFirewall\PrivateProfile\DefaultOutboundAction~0
+WS2008-MSSB-123~Public Profile Settings: Firewall state~HKLM\Software\Policies\Microsoft\WindowsFirewall\PublicProfile\EnableFirewall~1
+WS2008-MSSB-124~Public Profile Settings: Inbound connections~HKLM\Software\Policies\Microsoft\WindowsFirewall\PublicProfile\DefaultInboundAction~1
+WS2008-MSSB-125~Public Profile Settings: Outbound connections~HKLM\Software\Policies\Microsoft\WindowsFirewall\PublicProfile\DefaultOutboundAction~0
+WS2008-MSSB-126~Public Profile Settings: Apply local firewall rules~HKLM\Software\Policies\Microsoft\WindowsFirewall\PublicProfile\AllowLocalPolicyMerge~0
+WS2008-MSSB-127~Public Profile Settings: Apply local connection security rules~HKLM\Software\Policies\Microsoft\WindowsFirewall\PublicProfile\AllowLocalIPsecPolicyMerge~0
+WS2008-MSSB-130~Administrative Templates: System: Display Shutdown Event Tracker~HKLM\Software\Policies\Microsoft\Windows NT\Reliability\ShutdownReasonOn~1
+WS2008-MSSB-131~Administrative Templates: System: Shutdown Event Tracker should be displayed~HKLM\Software\Policies\Microsoft\Windows NT\Reliability\ShutdownReasonUI~1
+WS2008-MSSB-132~Administrative Templates: Internet Communication Management/Settings: Turn-off Windows Customer Experience Improvement Program~HKLM\Software\Policies\Microsoft\SQMClient\Windows\CEIPEnable~0
+WS2008-MSSB-134~Administrative Templates: Internet Communication Management/Settings: Turn-off downloading of print drivers over http~HKLM\Software\Policies\Microsoft\Windows NT\Printers\DisableWebPnPDownload~1
+WS2008-MSSB-136~Administrative Templates: Internet Communication Management/Settings: Turn off the `Publish to Web` task for files and folders~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoPublishingWizard~1
+WS2008-MSSB-137~Administrative Templates: Internet Communication Management/Settings: Turn off Internet download for Web publishing and online ordering wizards~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoWebServices~1
+WS2008-MSSB-135~Administrative Templates: Internet Communication Management/Settings: Turn off printing over HTTP~HKLM\Software\Policies\Microsoft\Windows NT\Printers\DisableHTTPPrinting~1
+WS2008-MSSB-138~Administrative Templates: Internet Communication Management/Settings: Turn off Search Companion content file updates~HKLM\Software\Policies\Microsoft\SearchCompanion\DisableContentFileUpdates~1
+WS2008-MSSB-133~Administrative Templates: Internet Communication Management/Settings: Turn off the Windows Messenger Customer Experience Improvement Program~HKLM\Software\Policies\Microsoft\Messenger\Client\CEIP~IN_LIST '1','2'
+WS2008-MSSB-139~Administrative Templates: Internet Communication Management/Settings: Turn off Windows Update device driver searching~HKLM\Software\Policies\Microsoft\Windows\DriverSearching\DontSearchWindowsUpdate~1
+WS2008-MSSB-140~Administrative Templates: Logon: Do not process the legacy run list~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisableLocalMachineRun~1
+WS2008-MSSB-141~Administrative Templates: Logon: Do not process the run once list~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisableLocalMachineRunOnce~1
+WS2008-MSSB-142~Administrative Templates: Remote Assistance: Offer Remote Assistance~HKLM\Software\policies\Microsoft\Windows NT\Terminal Services\fAllowToGetHelp~0
+WS2008-MSSB-143~Administrative Templates: Remote Assistance: Solicited Remote Assistance~HKLM\Software\policies\Microsoft\Windows NT\Terminal Services\fAllowUnsolicited~0
+WS2008-MSSB-144~Administrative Templates: Remote Procedure Call: Restrictions for Unauthenticated RPC clients~HKLM\Software\Policies\Microsoft\Windows NT\Rpc\RestrictRemoteClients~1
+WS2008-MSSB-145~Administrative Templates: Remote Procedure Call: RPC Endpoint Mapper Client Authentication~HKLM\Software\Policies\Microsoft\Windows NT\Rpc\EnableAuthEpResolution~1
+WS2008-MSSB-146~Administrative Templates: Group Policy: Registry policy processing~Registry policy processing- This is made up of WS2008-MSSB-146 and WS2008-MSSB-148~SETTING_NOT_DEFINED
+WS2008-MSSB-147~Administrative Templates: Group Policy: Do not apply during periodic background processing~HKLM\Software\Policies\Microsoft\Windows\Group Policy\{35378EAC-683F-11D2-A89A-00C04FBBCFA2}\NoBackgroundPolicy~1
+WS2008-MSSB-148~Administrative Templates: Group Policy: Process even if the Group Policy objects have not changed~HKLM\Software\Policies\Microsoft\Windows\Group Policy\{35378EAC-683F-11D2-A89A-00C04FBBCFA2}\NoGPOListChanges~0
+WS2008-MSSB-149~Administrative Templates: Windows Components/AutoPlay Policies: Turn off Autoplay~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoDriveTypeAutoRun~255
+WS2008-MSSB-150~Administrative Templates: Windows Components/Internet Explorer: Disable Periodic Check for Internet Explorer software updates~HKLM\Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions\NoUpdateCheck~1
+WS2008-MSSB-151~Administrative Templates: Windows Components/Internet Explorer: Disable showing the splash screen~HKLM\Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions\NoSplash~1
+WS2008-MSSB-152~Administrative Templates: Windows Components/Internet Explorer: Disable software update shell notifications on program launch~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoMSAppLogo5ChannelNotify~1
+WS2008-MSSB-153~Administrative Templates: Windows Components/Internet Explorer: Make proxy settings per-machine (rather than per-user)~HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\ProxySettingsPerUser~0
+WS2008-MSSB-154~Administrative Templates: Windows Components/Internet Explorer: Security Zones: Use only machine settings~HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Security_HKLM_only~1
+WS2008-MSSB-155~Windows Components/Remote Desktop Services: Remote Desktop Connection Client: Do not allow passwords to be saved~HKLM\Software\Policies\Microsoft\Windows NT\Terminal Services\DisablePasswordSaving~1
+WS2008-MSSB-156~Remote Desktop Session Host: Security: Always prompt for password upon connection~HKLM\Software\Policies\Microsoft\Windows NT\Terminal Services\fPromptForPassword~1
+WS2008-MSSB-158~Remote Desktop Session Host: Device & Resource Redirection: Do not allow drive redirection~HKLM\Software\Policies\Microsoft\Windows NT\Terminal Services\fDisableCdm~1
+WS2008-MSSB-159~Remote Desktop Session Host: Windows Components\Credential User Interface: Enumerate administrator accounts on elevation~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\CredUI\EnumerateAdministrators~0
+WS2008-MSSB-160~Remote Desktop Session Host: Windows Components\Credential User Interface: Require trusted path for credential entry~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\CredUI\EnableSecureCredentialPrompting~1
+WS2008-MSSB-161~Remote Desktop Session Host: Windows Components\NetMeeting: Disable remote Desktop Sharing~HKLM\Software\Policies\Microsoft\Conferencing\NoRDS~1
+WS2008-MSSB-128~Domain Profile: Windows Firewall: Do not allow exceptions~HKLM\Software\Policies\Microsoft\WindowsFirewall\DomainProfile\DoNotAllowExceptions~0
+WS2008-MSSB-129~Domain Profile: Windows Firewall: Protect all network connections (covered by WS2008-MSSB-116)~HKLM\Software\Policies\Microsoft\WindowsFirewall\DomainProfile\EnableFirewall~SETTING_NOT_DEFINED
+WS2008-MSSB-162~System: Security System Extension~SecuritySystemExtension~Success and Failure
+WS2008-MSSB-163~System: System Integrity~SystemIntegrity~Success and Failure
+WS2008-MSSB-164~System: IPsec Driver~IPsecDriver~Success and Failure
+WS2008-MSSB-165~System: Other System Events~OtherSystemEvents~Success and Failure
+WS2008-MSSB-166~System: Security State Change~SecurityStateChange~Success and Failure
+WS2008-MSSB-167~Logon/Logoff : Logon~LogonEvents~Success and Failure
+WS2008-MSSB-168~Logon/Logoff : Logoff~Logoff~IN_LIST 'Success','Success and Failure'
+WS2008-MSSB-169~Logon/Logoff : Account Lockout~AccountLockout~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-170~Logon/Logoff : IPsec Main Mode~IPsecMainMode~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-171~Logon/Logoff : IPsec Quick Mode~IPsecQuickMode~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-172~Logon/Logoff : IPsec Extended Mode~IPsecExtendedMode~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-173~Logon/Logoff : Special Logon~SpecialLogonEvents~IN_LIST 'Success','Success and Failure'
+WS2008-MSSB-174~Logon/Logoff : Other Logon/Logoff Events~OtherLogon/LogoffEvents~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-175~Logon/Logoff : Network Policy Server~NetworkPolicyServer~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-176~Object Access: File System~FileSystem~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-177~Object Access: Registry~Registry~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-178~Object Access: Kernel Object~KernelObject~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-179~Object Access: SAM~SAM~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-180~Object Access: Certification Services~CertificationServices~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-181~Object Access: Application Generated~ApplicationGenerated~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-182~Object Access: Handle Manipulation~HandleManipulation~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-183~Object Access: File Share~FileShare~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-184~Object Access: Filtering Platform Packet Drop~FilteringPlatformPacketDrop~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-185~Object Access: Filtering Platform Connection~FilteringPlatformConnection~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-186~Object Access: Other Object Access Events~OtherObjectAccessEvents~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-187~Privilege Use: Sensitive Privilege Use~SensitivePrivilegeUse~Success and Failure
+WS2008-MSSB-188~Privilege Use: Non Sensitive Privilege Use~NonSensitivePrivilegeUse~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-189~Privilege Use: Other Privilege Use Events~OtherPrivilegeUseEvents~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-190~Detailed Tracking: Process Termination~ProcessTerminationEvents~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-191~Detailed Tracking: DPAPI Activity~DPAPIActivity~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-192~Detailed Tracking: RPC Events~RPCEvents~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-193~Detailed Tracking: Process Creation~ProcessCreation~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-194~Policy Change: Audit Policy Change~AuditPolicyChange~Success and Failure
+WS2008-MSSB-195~Policy Change: Authentication Policy Change~AuthenticationPolicyChange~Success and Failure
+WS2008-MSSB-196~Policy Change: Authorization Policy Change~AuthorizationPolicyChange~Success and Failure
+WS2008-MSSB-197~Policy Change: MPSSVC Rule-Level Policy Change~MPSSVCRule-LevelPolicyChange~Success and Failure
+WS2008-MSSB-198~Policy Change: Filtering Platform Policy Change~FilteringPlatformPolicyChange~Success and Failure
+WS2008-MSSB-199~Policy Change: Other Policy Change Events~OtherPolicyChangeEvents~Success and Failure
+WS2008-MSSB-200~Account Management: User Account Management~UserAccountManagement~Success and Failure
+WS2008-MSSB-201~Account Management: Computer Account Management~ComputerAccountManagement~Success and Failure
+WS2008-MSSB-202~Account Management: Security Group Management~SecurityGroupManagement~Success and Failure
+WS2008-MSSB-203~Account Management: Distribution Group Management~DistributionGroupManagement~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-204~Account Management: Application Group Management~ApplicationGroupManagement~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-205~Account Management: Other Account Management Events~OtherAccountManagementEvents~Success and Failure
+WS2008-MSSB-206~DS Access: Directory Service Access~DirectoryServiceAccess~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-207~DS Access: Directory Service Changes~DirectoryServiceChanges~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-208~DS Access: Directory Service Replication~DirectoryServiceReplication~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-209~DS Access: Detailed Directory Service Replication~DetailedDirectoryServiceReplication~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-210~Account Logon: Kerberos Authentication Service~KerberosAuthenticationService~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-211~Account Logon: Credential Validation~CredentialValidation~Success and Failure
+WS2008-MSSB-212~Account Logon: Kerberos Service Ticket Operations~KerberosServiceTicketOperations~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2008-MSSB-213~Account Logon: Other Account Logon Events~OtherAccountLogonEvents~IN_LIST 'No Auditing','Success','Failure','Success and Failure'
+WS2012-MSSB-01~Account Logon: Credential Validation~CredentialValidation~Success and Failure
+WS2012-MSSB-02~Account Logon: Other Account Logon Events~OtherAccountLogonEvents~Success and Failure
+WS2012-MSSB-03~Account Management: Application Group Management~ApplicationGroupManagement~Success and Failure
+WS2012-MSSB-04~Account Management: Computer Account Management~ComputerAccountManagement~Success and Failure
+WS2012-MSSB-05~Account Management: Other Account Management Events~OtherAccountManagementEvents~Success and Failure
+WS2012-MSSB-06~Account Management: Security Group Management~SecurityGroupManagement~Success and Failure
+WS2012-MSSB-07~Account Management: User Account Management~UserAccountManagement~Success and Failure
+WS2012-MSSB-08~Detailed Tracking: Process Creation~ProcessCreation~IN_LIST 'Success','Success and Failure'
+WS2012-MSSB-09~Logon/Logoff : Account Lockout~AccountLockout~IN_LIST 'Success','Success and Failure'
+WS2012-MSSB-10~Logon/Logoff : Logoff~Logoff~IN_LIST 'Success','Success and Failure'
+WS2012-MSSB-11~Logon/Logoff : Logon~LogonEvents~Success and Failure
+WS2012-MSSB-12~Logon/Logoff : Special Logon~SpecialLogonEvents~IN_LIST 'Success','Success and Failure'
+WS2012-MSSB-13~Policy Change: Audit Policy Change~AuditPolicyChange~Success and Failure
+WS2012-MSSB-14~Policy Change: Authentication Policy Change~AuthenticationPolicyChange~Success and Failure
+WS2012-MSSB-15~Policy Change: Authorization Policy Change~AuthorizationPolicyChange~Success and Failure
+WS2012-MSSB-16~Policy Change: Filtering Platform Policy Change~FilteringPlatformPolicyChange~Success and Failure
+WS2012-MSSB-17~Policy Change: MPSSVC Rule-Level Policy Change~MPSSVCRule-LevelPolicyChange~Success and Failure
+WS2012-MSSB-18~Policy Change: Other Policy Change Events~OtherPolicyChangeEvents~Success and Failure
+WS2012-MSSB-19~Privilege Use: Sensitive Privilege Use~SensitivePrivilegeUse~Success and Failure
+WS2012-MSSB-20~System: IPsec Driver~IPsecDriver~Success and Failure
+WS2012-MSSB-21~System: Other System Events~OtherSystemEvents~Success and Failure
+WS2012-MSSB-22~System: Security State Change~SecurityStateChange~Success and Failure
+WS2012-MSSB-23~System: Security System Extension~SecuritySystemExtension~Success and Failure
+WS2012-MSSB-24~System: System Integrity~SystemIntegrity~Success and Failure
+WS2012-MSSB-25~Accounts: Administrator account status~Administrator account status~1
+WS2012-MSSB-26~Accounts: Guest account status~Guest account status~0
+WS2012-MSSB-27~Accounts: Limit local account use of blank passwords to console logon only~HKLM\System\CurrentControlSet\Control\Lsa\LimitBlankPasswordUse~1
+WS2012-MSSB-28~Accounts: Rename administrator account~Rename administrator account~Praetor
+WS2012-MSSB-29~Accounts: Rename guest account~Rename guest account~Associate
+WS2012-MSSB-30~Audit: Audit the access of global system objects~HKLM\System\CurrentControlSet\Control\Lsa\AuditBaseObjects~0
+WS2012-MSSB-31~Audit: Audit the use of Backup and Restore privilege~HKLM\System\CurrentControlSet\Control\Lsa\FullPrivilegeAuditing~0
+WS2012-MSSB-32~Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings~HKLM\System\CurrentControlSet\Control\Lsa\SCENoApplyLegacyAuditPolicy~1
+WS2012-MSSB-33~Audit: Shut down system immediately if unable to log security audits~HKLM\System\CurrentControlSet\Control\Lsa\CrashOnAuditFail~0
+WS2012-MSSB-34~Devices: Allow undock without having to log on~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\UndockWithoutLogon~0
+WS2012-MSSB-35~Devices: Allowed to format and eject removable media~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\AllocateDASD~0
+WS2012-MSSB-36~Devices: Prevent users from installing printer drivers~HKLM\System\CurrentControlSet\Control\Print\Providers\LanMan Print Services\Servers\AddPrinterDrivers~1
+WS2012-MSSB-37~Devices: Restrict CD-ROM access to locally logged-on user only~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\AllocateCDRoms~0
+WS2012-MSSB-38~Devices: Restrict floppy access to locally logged-on user only~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\AllocateFloppies~0
+WS2012-MSSB-39~Domain member: Digitally encrypt or sign secure channel data (always)~HKLM\System\CurrentControlSet\Services\Netlogon\Parameters\RequireSignOrSeal~1
+WS2012-MSSB-40~Domain member: Digitally encrypt secure channel data (when possible)~HKLM\System\CurrentControlSet\Services\Netlogon\Parameters\SealSecureChannel~1
+WS2012-MSSB-41~Domain member: Digitally sign secure channel data (when possible)~HKLM\System\CurrentControlSet\Services\Netlogon\Parameters\SignSecureChannel~1
+WS2012-MSSB-42~Domain member: Disable machine account password changes~HKLM\System\CurrentControlSet\Services\Netlogon\Parameters\DisablePasswordChange~0
+WS2012-MSSB-43~Domain member: Maximum machine account password age~HKLM\System\CurrentControlSet\Services\Netlogon\Parameters\MaximumPasswordAge~30
+WS2012-MSSB-44~Domain member: Require strong (Windows 2000 or later) session key~HKLM\System\CurrentControlSet\Services\Netlogon\Parameters\RequireStrongKey~1
+WS2012-MSSB-45~Interactive logon: Do not display last user name~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\DontDisplayLastUserName~1
+WS2012-MSSB-46~Interactive logon: Do not require CTRL+ALT+DEL~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\DisableCAD~0
+WS2012-MSSB-48~Machine inactivity limit~HKLM\Software\Windows\CurrentVersion\Policies\System\InactivityTimeoutSecs~SETTING_NOT_DEFINED
+WS2012-MSSB-49~Interactive logon: Message text for users attempting to log on~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\LegalNoticeText~This Facility is for the use by authorized users only and is subject, to the Sanlam Group's Information Security Policies, the content of which all users, are aware of and which can be found on the Group Intranet and/or the Intranet sites of the Group Companies., Users abusing the facility in any manner, including wrongful or, incorrect usage can be precluded from using the facility and be, subject to disciplinary action., All users accept and consent to the Sanlam Group's right to access, monitor, and intercept any user's electronic communication records in the, ordinary course of carrying on its business, provided there is, reasonable justification for such action., If such monitoring reveals possible evidence of wrongful or criminal, activity, such evidence will be provided to the relevant authorities., By Clicking on “OK” and logging onto this system indicates your, acceptance of all above-mentioned terms and conditions.
+WS2012-MSSB-50~Interactive logon: Message title for users attempting to log on~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\LegalNoticeCaption~Important Notice! Please read carefully before proceeding!
+WS2012-MSSB-51~Interactive logon: Number of previous logons to cache (in case domain controller is not available)~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\CachedLogonsCount~0
+WS2012-MSSB-52~Interactive logon: Prompt user to change password before expiration~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\PasswordExpiryWarning~IN_LIST '14','7','5','3'
+WS2012-MSSB-53~Interactive logon: Require Domain Controller authentication to unlock workstation~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\ForceUnlockLogon~1
+WS2012-MSSB-54~Smart card removal behaviour~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\ScRemoveOption~1
+WS2012-MSSB-55~Microsoft network client: Digitally sign communications (always)~HKLM\System\CurrentControlSet\Services\LanManServer\Parameters\RequireSecuritySignature~0
+WS2012-MSSB-56~Microsoft network client: Digitally sign communications (if server agrees)~HKLM\System\CurrentControlSet\Services\LanManServer\Parameters\EnableSecuritySignature~1
+WS2012-MSSB-57~Microsoft network client: Send unencrypted password to third-party SMB servers~HKLM\System\CurrentControlSet\Services\LanmanWorkstation\Parameters\EnablePlainTextPassword~0
+WS2012-MSSB-58~Microsoft network server: Amount of idle time required before suspending session~HKLM\System\CurrentControlSet\Services\LanManServer\Parameters\AutoDisconnect~15
+WS2012-MSSB-59~Microsoft network server: Digitally sign communications (always)~HKLM\System\CurrentControlSet\Services\LanManServer\Parameters\RequireSecuritySignature~0
+WS2012-MSSB-60~Microsoft network server: Digitally sign communications (if client agrees)~HKLM\System\CurrentControlSet\Services\LanManServer\Parameters\EnableSecuritySignature~1
+WS2012-MSSB-61~Microsoft network server: Disconnect clients when logon hours expire~HKLM\System\CurrentControlSet\Services\LanManServer\Parameters\EnableForcedLogOff~1
+WS2012-MSSB-62~MSS: (AutoAdminLogon) Enable Automatic Logon (not recommended)~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\AutoAdminLogon~0
+WS2012-MSSB-63~MSS: (AutoReboot) Allow Windows to automatically restart after a system crash (recommended except for highly secure environments)~HKLM\System\CurrentControlSet\Control\CrashControl\AutoReboot~1
+WS2012-MSSB-64~MSS: (AutoShareServer) Enable Administrative Shares (recommended except for highly secure environments)~HKLM\System\CurrentControlSet\Services\LanmanServer\Parameters\AutoShareServer~1
+WS2012-MSSB-65~(DisableIPSourceRouting IPv6) IP source routing protection level (protects against packet spoofing)~HKLM\System\CurrentControlSet\Services\Tcpip6\Parameters\DisableIPSourceRouting~2
+WS2012-MSSB-66~MSS: (DisableIPSourceRouting) IP source routing protection level (protects against packet spoofing)~HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\DisableIPSourceRouting~2
+WS2012-MSSB-67~MSS: (EnableICMPRedirect) Allow ICMP redirects to override OSPF generated routes~HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\EnableICMPRedirect~0
+WS2012-MSSB-68~MSS: (Hidden) Hide Computer From the Browse List (not recommended except for highly secure environments)~HKLM\System\CurrentControlSet\Services\Lanmanserver\Parameters\Hidden~0
+WS2012-MSSB-69~MSS: (KeepAliveTime) How often keep-alive packets are sent in milliseconds~HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\KeepAliveTime~300000
+WS2012-MSSB-70~MSS: (NoDefaultExempt) Configure IPSec exemptions for various types of network traffic.~HKLM\System\CurrentControlSet\Services\IPSEC\NoDefaultExempt~3
+WS2012-MSSB-71a~MSS: (NoNameReleaseOnDemand) Allow the computer to ignore NetBIOS name release requests except from WINS servers~HKLM\System\CurrentControlSet\Services\Netbt\Parameters\NoNameReleaseOnDemand~1
+WS2012-MSSB-71b~MSS: (NtfsDisable8dot3NameCreation) Enable the computer to stop generating 8.3 style filenames (recommended)~HKLM\System\CurrentControlSet\Control\FileSystem\NtfsDisable8dot3NameCreation~IN_LIST '0','1'
+WS2012-MSSB-72~MSS: (PerformRouterDiscovery) Allow IRDP to detect and configure Default Gateway addresses (could lead to DoS)~HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\PerformRouterDiscovery~0
+WS2012-MSSB-73~MSS: (SafeDllSearchMode) Enable Safe DLL search mode (recommended)~HKLM\System\CurrentControlSet\Control\Session Manager\SafeDllSearchMode~1
+WS2012-MSSB-74~MSS: (ScreenSaverGracePeriod) The time in seconds before the screen saver grace period expires (0 recommended)~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\ScreenSaverGracePeriod~0
+WS2012-MSSB-75~(TcpMaxDataRetransmissions IPv6) How many times unacknowledged data is retransmitted (3 recommended, 5 is default)~HKLM\System\CurrentControlSet\Services\Tcpip6\Parameters\TcpMaxDataRetransmissions~3
+WS2012-MSSB-76~MSS: (TcpMaxDataRetransmissions) How many times unacknowledged data is retransmitted (3 recommended, 5 is default)~HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\TcpMaxDataRetransmissions~3
+WS2012-MSSB-77~MSS: (WarningLevel) Percentage threshold for the security event log at which the system will generate a warning~HKLM\System\CurrentControlSet\Services\Eventlog\Security\WarningLevel~90
+WS2012-MSSB-78~Network access: Allow anonymous SID/Name translation~Allow anonymous SID-Name translation~0
+WS2012-MSSB-79~Network access: Do not allow anonymous enumeration of SAM accounts~HKLM\System\CurrentControlSet\Control\Lsa\RestrictAnonymous~1
+WS2012-MSSB-80~Network access: Do not allow anonymous enumeration of SAM accounts and shares~HKLM\System\CurrentControlSet\Control\Lsa\RestrictAnonymousSAM~1
+WS2012-MSSB-81~Network access: Do not allow storage of credentials or .NET Passports for network authentication~HKLM\System\CurrentControlSet\Control\Lsa\DisableDomainCreds~1
+WS2012-MSSB-82~Network access: Let Everyone permissions apply to anonymous users~HKLM\System\CurrentControlSet\Control\Lsa\EveryoneIncludesAnonymous~0
+WS2012-MSSB-83~Network access: Remotely accessible registry paths~HKLM\System\CurrentControlSet\Control\SecurePipeServers\Winreg\AllowedPaths\Machine~IN_LIST '','Null Value','Null'
+WS2012-MSSB-84~Network access: Remotely accessible registry paths and sub paths~HKLM\System\CurrentControlSet\Control\SecurePipeServers\Winreg\AllowedExactPaths\Machine~IN_LIST '','Null Value','Null'
+WS2012-MSSB-85~Network access: Restrict anonymous access to Named Pipes and Shares~HKLM\System\CurrentControlSet\Services\LanManServer\Parameters\RestrictNullSessAccess~1
+WS2012-MSSB-86~Network access: Shares that can be accessed anonymously~HKLM\System\CurrentControlSet\Services\LanManServer\Parameters\NullSessionShares~IN_LIST '','Null Value','Null'
+WS2012-MSSB-87~Network access: Sharing and security model for local accounts~HKLM\System\CurrentControlSet\Control\Lsa\ForceGuest~0
+WS2012-MSSB-88~Network security: Do not store LAN Manager hash value on next password change~HKLM\System\CurrentControlSet\Control\Lsa\NoLMHash~1
+WS2012-MSSB-89~Network security: Force logoff when logon hours expire~HKLM\System\CurrentControlSet\Services\LanManServer\Parameters\EnableForcedLogOff~1
+WS2012-MSSB-90~Network security: LAN Manager authentication level~HKLM\System\CurrentControlSet\Control\Lsa\LmCompatibilityLevel~3
+WS2012-MSSB-91~Network security: LDAP client signing requirements~HKLM\System\CurrentControlSet\Services\LDAP\LDAPClientIntegrity~1
+WS2012-MSSB-92~Network security: Minimum session security for NTLM SSP based (including secure RPC) clients~HKLM\System\CurrentControlSet\Control\Lsa\MSV1_0\NTLMMinClientSec~537395200
+WS2012-MSSB-93~Recovery console: Allow automatic administrative logon~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Setup\RecoveryConsole\SecurityLevel~0
+WS2012-MSSB-94~Recovery console: Allow floppy copy and access to all drives and all folders~HKLM\Software\Microsoft\Windows NT\CurrentVersion\Setup\RecoveryConsole\SetCommand~0
+WS2012-MSSB-95~Shutdown: Allow system to be shut down without having to log on~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\ShutdownWithoutLogon~0
+WS2012-MSSB-96~Shutdown: Clear virtual memory pagefile~HKLM\System\CurrentControlSet\Control\Session Manager\Memory Management\ClearPageFileAtShutdown~IN_LIST '0','1'
+WS2012-MSSB-97~System cryptography: Force strong key protection for user keys stored on the computer~HKLM\Software\Policies\Microsoft\Cryptography\ForceKeyProtection~1
+WS2012-MSSB-98~System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing~HKLM\System\CurrentControlSet\Control\Lsa\FIPSAlgorithmPolicy\Enabled~0
+WS2012-MSSB-99~System objects: Require case insensitivity for non-Windows subsystems~HKLM\System\CurrentControlSet\Control\Session Manager\Kernel\ObCaseInsensitive~1
+WS2012-MSSB-100~System objects: Strengthen default permissions of internal system objects (e.g. Symbolic Links)~HKLM\System\CurrentControlSet\Control\Session Manager\ProtectionMode~1
+WS2012-MSSB-101~System settings: Optional subsystems~HKLM\System\CurrentControlSet\Control\Session Manager\SubSystems\optional~IN_LIST '','None','Null Value','Null','null'
+WS2012-MSSB-102~System settings: Use Certificate Rules on Windows Executables for Software Restriction Policies~HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\AuthenticodeEnabled~0
+WS2012-MSSB-103~User Account Control: Admin Approval Mode for the Built-in Administrator account~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\FilterAdministratorToken~1
+WS2012-MSSB-104~User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableUIADesktopToggle~0
+WS2012-MSSB-105~User Account Control: Behavior of the elevation prompt for Adminstrators in Admin Approval Mode~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\ConsentPromptBehaviorAdmin~IN_LIST '5','3','1'
+WS2012-MSSB-106~User Account Control: Behavior of the elevation prompt for standard users~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\ConsentPromptBehaviorUser~IN_LIST '3','1','0'
+WS2012-MSSB-107~User Account Control: Detect application installations and prompt for elevation~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableInstallerDetection~1
+WS2012-MSSB-108~User Account Control: Only elevate executables that are signed and validated~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\ValidateAdminCodeSignatures~0
+WS2012-MSSB-109~User Account Control: Only elevate UIAccess applications that are installed in secure locations~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableSecureUIAPaths~1
+WS2012-MSSB-110~User Account Control: Run all Adminstrators in Admin Approval Mode~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA~1
+WS2012-MSSB-111~User Account Control: Switch to the secure desktop when prompting for elevation~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\PromptOnSecureDesktop~1
+WS2012-MSSB-112~User Account Control: Virtualize file and registry write failures to per-user locations~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableVirtualization~1
+WS2012-MSSB-113~Change the system time (SeSystemTimePrivilege)~Change the system time~BUILTIN\Administrators,NT AUTHORITY\LOCAL SERVICE
+WS2012-MSSB-114~Change the time zone~Change the time zone~BUILTIN\Administrators,NT AUTHORITY\LOCAL SERVICE
+WS2012-MSSB-115~Deny access to this computer from the network (SeDenyNetworkLogonRight)~Deny access to this computer from the network~NT AUTHORITY\ANONYMOUS LOGON,BUILTIN\Guests,Associate
+WS2012-MSSB-116~Deny log on as a service (SeDenyServiceLogonRight)~Deny log on as a service~NT AUTHORITY\ANONYMOUS LOGON,BUILTIN\Guests,Associate
+WS2012-MSSB-117~Deny log on locally (SeDenyInteractiveLogonRight)~Deny log on locally~NT AUTHORITY\ANONYMOUS LOGON,BUILTIN\Guests,Associate
+WS2012-MSSB-118~Deny log on through Terminal Services (SeDenyRemoteInteractiveLogonRight)~Deny log on through terminal services~NT AUTHORITY\ANONYMOUS LOGON,BUILTIN\Guests,Associate
+WS2012-MSSB-119~Generate security audits (SeAuditPrivilege)~Generate security audits~NT AUTHORITY\NETWORK SERVICE,NT AUTHORITY\LOCAL SERVICE
+WS2012-MSSB-120~Domain Profile Settings: Allow unicast responses~HKLM\Software\Policies\Microsoft\WindowsFirewall\DomainProfile\DisableUnicastResponsesToMulticastBroadcast~1
+WS2012-MSSB-121~Domain Profile Settings: Apply local connection security rules~HKLM\Software\Policies\Microsoft\WindowsFirewall\DomainProfile\AllowLocalIPsecPolicyMerge~IN_LIST '0','1'
+WS2012-MSSB-122~Domain Profile Settings: Apply local firewall rules~HKLM\Software\Policies\Microsoft\WindowsFirewall\DomainProfile\AllowLocalPolicyMerge~IN_LIST '0','1'
+WS2012-MSSB-123~Domain Profile Settings: Display notifications~HKLM\Software\Policies\Microsoft\WindowsFirewall\DomainProfile\DisableNotifications~0
+WS2012-MSSB-124~Domain Profile Settings: Firewall state~HKLM\Software\Policies\Microsoft\WindowsFirewall\DomainProfile\EnableFirewall~1
+WS2012-MSSB-125~Domain Profile Settings: Inbound connections~HKLM\Software\Policies\Microsoft\WindowsFirewall\DomainProfile\DefaultInboundAction~1
+WS2012-MSSB-126~Domain Profile Settings: Outbound connections~HKLM\Software\Policies\Microsoft\WindowsFirewall\DomainProfile\DefaultOutboundAction~0
+WS2012-MSSB-127~Private Profile Settings: Allow unicast responses~HKLM\Software\Policies\Microsoft\WindowsFirewall\PrivateProfile\DisableUnicastResponsesToMulticastBroadcast~1
+WS2012-MSSB-128~Private Profile Settings: Apply local connection security rules~HKLM\Software\Policies\Microsoft\WindowsFirewall\PrivateProfile\AllowLocalIPsecPolicyMerge~IN_LIST '0','1'
+WS2012-MSSB-129~Private Profile Settings: Apply local firewall rules~HKLM\Software\Policies\Microsoft\WindowsFirewall\PrivateProfile\AllowLocalPolicyMerge~IN_LIST '0','1'
+WS2012-MSSB-130~Private Profile Settings: Display notifications~HKLM\Software\Policies\Microsoft\WindowsFirewall\PrivateProfile\DisableNotifications~0
+WS2012-MSSB-131~Private Profile Settings: Firewall state~HKLM\Software\Policies\Microsoft\WindowsFirewall\PrivateProfile\EnableFirewall~1
+WS2012-MSSB-132~Private Profile Settings: Inbound connections~HKLM\Software\Policies\Microsoft\WindowsFirewall\PrivateProfile\DefaultInboundAction~1
+WS2012-MSSB-133~Private Profile Settings: Outbound connections~HKLM\Software\Policies\Microsoft\WindowsFirewall\PrivateProfile\DefaultOutboundAction~0
+WS2012-MSSB-134~Public Profile Settings: Allow unicast responses~HKLM\Software\Policies\Microsoft\WindowsFirewall\PublicProfile\DisableUnicastResponsesToMulticastBroadcast~1
+WS2012-MSSB-135~Public Profile Settings: Apply local connection security rules~HKLM\Software\Policies\Microsoft\WindowsFirewall\PublicProfile\AllowLocalPolicyMerge~1
+WS2012-MSSB-136~Public Profile Settings: Apply local firewall rules~HKLM\Software\Policies\Microsoft\WindowsFirewall\PublicProfile\AllowLocalIPsecPolicyMerge~1
+WS2012-MSSB-137~Public Profile Settings: Display a notification~HKLM\Software\Policies\Microsoft\WindowsFirewall\PublicProfile\DisableNotifications~0
+WS2012-MSSB-138~Public Profile Settings: Firewall state~HKLM\Software\Policies\Microsoft\WindowsFirewall\PublicProfile\EnableFirewall~1
+WS2012-MSSB-139~Public Profile Settings: Inbound connections~HKLM\Software\Policies\Microsoft\WindowsFirewall\PublicProfile\DefaultInboundAction~1
+WS2012-MSSB-140~Public Profile Settings: Outbound connections~HKLM\Software\Policies\Microsoft\WindowsFirewall\PublicProfile\DefaultOutboundAction~0
+WS2012-MSSB-141~Administrative Templates: Windows Components/AutoPlay Policies: Turn off Autoplay~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoDriveTypeAutoRun~255
+WS2012-MSSB-142~Remote Desktop Session Host: Windows Components\Credential User Interface: Enumerate administrator accounts on elevation~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\CredUI\EnumerateAdministrators~0
+WS2012-MSSB-144~Control Event Log behaviour when the log file reaches its maximum size - SYSTEM~HKLM\System\CurrentControlSet\Services\EventLog\System\Retention~0
+WS2012-MSSB-145~Control Event Log behaviour when the Application log file reaches its maximum size~HKLM\System\CurrentControlSet\Services\EventLog\Application\Retention~0
+WS2012-MSSB-146~Control Event Log behaviour when the log file reaches its maximum size - SECURITY~HKLM\System\CurrentControlSet\Services\EventLog\Security\Retention~0
+WS2012-MSSB-147~Maximum system log size~HKLM\System\CurrentControlSet\Services\EventLog\System\MaxSize~IN_LIST '0x8000000','83886080','33554432','524288000','0x5000000','0x1400000','0x2000000','20971520'
+WS2012-MSSB-148~Maximum application log size~HKLM\System\CurrentControlSet\Services\EventLog\Application\MaxSize~IN_LIST '0x8000000','83886080','33554432','524288000','0x5000000','0x1400000','0x2000000','20971520'
+WS2012-MSSB-149~Maximum security log size~HKLM\System\CurrentControlSet\Services\EventLog\Security\MaxSize~IN_LIST '0x8000000','83886080','524288000','0x5000000','20971520'
+WS2012-MSSB-150~Administrative Templates: Windows Components/Internet Explorer: Disable Periodic Check for Internet Explorer software updates~HKLM\Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions\NoUpdateCheck~1
+WS2012-MSSB-151~Administrative Templates: Windows Components/Internet Explorer: Make proxy settings per-machine (rather than per-user)~HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\ProxySettingsPerUser~SETTING_NOT_DEFINED
+WS2012-MSSB-152~Administrative Templates: Windows Components/Internet Explorer: Security Zones: Use only machine settings~HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Security_HKLM_only~SETTING_NOT_DEFINED
+WS2012-MSSB-153~Remote Desktop Session Host: Windows Components\NetMeeting: Disable remote Desktop Sharing~HKLM\Software\Policies\Microsoft\Conferencing\NoRDS~1
+WS2012-MSSB-154~Remote Desktop Session Host: Security: Always prompt for password upon connection~HKLM\Software\Policies\Microsoft\Windows NT\Terminal Services\fPromptForPassword~1
+WS2012-MSSB-155~Administrative Templates: System: Display Shutdown Event Tracker~HKLM\Software\Policies\Microsoft\Windows NT\Reliability\ShutdownReasonOn~1
+WS2012-MSSB-156~Remote Desktop Session Host: Device & Resource Redirection: Do not allow drive redirection~HKLM\Software\Policies\Microsoft\Windows NT\Terminal Services\fDisableCdm~1
+WS2012-MSSB-157~Windows Components/Remote Desktop Services: Remote Desktop Connection Client: Do not allow passwords to be saved~HKLM\Software\Policies\Microsoft\Windows NT\Terminal Services\DisablePasswordSaving~1
+WS2012-MSSB-159~Remote Desktop Session Host: Security: Set client connection encryption level~HKLM\Software\Policies\Microsoft\Windows NT\Terminal Services\MinEncryptionLevel~3
+WS2012-MSSB-160~Always install with elevated privileges~HKLM\Software\Policies\Microsoft\Windows\Installer\AlwaysInstallElevated~0
+WS2012-MSSB-161~Administrative Templates: System: Shutdown Event Tracker should be displayed~HKLM\Software\Policies\Microsoft\Windows NT\Reliability\ShutdownReasonUI~1
+WS2012-MSSB-162a~Administrative Templates: Group Policy: Registry policy processing(NoBackgroundPolicy)~HKLM\Software\Policies\Microsoft\Windows\Group Policy\{35378EAC-683F-11D2-A89A-00C04FBBCFA2}\NoBackgroundPolicy~1
+WS2012-MSSB-162b~Administrative Templates: Group Policy: Registry policy processing (NoGPOListChanges)~HKLM\Software\Policies\Microsoft\Windows\Group Policy\{35378EAC-683F-11D2-A89A-00C04FBBCFA2}\NoGPOListChanges~0
+WS2012-MSSB-163~Administrative Templates: Internet Communication Management/Settings: Turn-off downloading of print drivers over HTTP~HKLM\Software\Policies\Microsoft\Windows NT\Printers\DisableWebPnPDownload~1
+WS2012-MSSB-164~Administrative Templates: Internet Communication Management/Settings: Turn off Internet download for Web publishing and online ordering wizards~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoWebServices~1
+WS2012-MSSB-165~Administrative Templates: Internet Communication Management/Settings: Turn off printing over HTTP~HKLM\Software\Policies\Microsoft\Windows NT\Printers\DisableHTTPPrinting~1
+WS2012-MSSB-166~Administrative Templates: Internet Communication Management/Settings: Turn off Search Companion content file updates~HKLM\Software\Policies\Microsoft\SearchCompanion\DisableContentFileUpdates~1
+WS2012-MSSB-167~Administrative Templates: Internet Communication Management/Settings: Turn off the Publish to Web task for files and folders~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoPublishingWizard~1
+WS2012-MSSB-168~Administrative Templates: Internet Communication Management/Settings: Turn off the Windows Messenger Customer Experience Improvement Program~HKLM\Software\Policies\Microsoft\Messenger\Client\CEIP~2
+WS2012-MSSB-169~Administrative Templates: Internet Communication Management/Settings: Turn-off Windows Customer Experience Improvement Program~HKLM\Software\Policies\Microsoft\SQMClient\Windows\CEIPEnable~0
+WS2012-MSSB-170~Administrative Templates: Internet Communication Management/Settings: Turn off Windows Update device driver searching~HKLM\Software\Policies\Microsoft\Windows\DriverSearching\DontSearchWindowsUpdate~1
+WS2012-MSSB-171~Administrative Templates: Logon: Do not process the legacy run list~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisableLocalMachineRun~1
+WS2012-MSSB-172~Administrative Templates: Logon: Do not process the run once list~HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisableLocalMachineRunOnce~1
+WS2012-MSSB-173~Administrative Templates: Remote Assistance: Offer Remote Assistance~HKLM\Software\policies\Microsoft\Windows NT\Terminal Services\fAllowToGetHelp~0
+WS2012-MSSB-174~Administrative Templates: Remote Assistance: Solicited Remote Assistance~HKLM\Software\policies\Microsoft\Windows NT\Terminal Services\fAllowUnsolicited~0
+WS2012-MSSB-175~Administrative Templates: Remote Procedure Call: Restrictions for Unauthenticated RPC clients~HKLM\Software\Policies\Microsoft\Windows NT\Rpc\RestrictRemoteClients~1
+WS2012-MSSB-176~Administrative Templates: Remote Procedure Call: RPC Endpoint Mapper Client Authentication~HKLM\Software\Policies\Microsoft\Windows NT\Rpc\EnableAuthEpResolution~1
+WS2012-MSSB-177~Administrative Templates: Control Panel/Personalization: Enable screen saver~HKCU\Software\Policies\Microsoft\Windows\Control Panel\Desktop\ScreenSaveActive~1
+WS2012-MSSB-178~Administrative Templates: Control Panel/Personalization: Force specific screen saver~HKCU\Software\Policies\Microsoft\Windows\Control Panel\Desktop\SCRNSAVE.EXE~logon.scr
+WS2012-MSSB-179~Administrative Templates: Control Panel/Personalization: Screen saver timeout~HKCU\Software\Policies\Microsoft\Windows\Control Panel\Desktop\ScreenSaveTimeOut~600

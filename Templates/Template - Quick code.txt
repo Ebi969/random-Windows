@@ -1,0 +1,50 @@
+nsLookup - get host name:
+
+try {
+       
+         $hostName = (@(Resolve-DnsName $ip -ErrorAction Stop | select -ExpandProperty NameHost) | Out-String).Trim()
+
+}catch {
+            
+         Write-Warning -Message "Record not found for $ip"
+         $hostName = "Record not found for $ip"
+
+}
+
+
+
+Create session remote server:
+
+$cred = Get-Credential
+
+$Session = New-PSSession -ComputerName $server -Credential $cred
+
+    Invoke-Command -Session $Session -Scriptblock {
+    
+    Get-Disk |Sort-Object Number |Select PSComputerName, Number, TotalSize, PartitionStyle
+    
+    }
+    Remove-PSSession $Session
+
+
+
+Import txt:
+$path="C:\Users\DA003089\Desktop\Scripts\Disk_Report" 
+$serverNames = get-content "$path\Servers.txt"
+
+Export to csv:
+
+$out=New-Object PSObject 
+
+$out | Add-Member -MemberType NoteProperty -Name "<Column Heading>" -Value <info>
+      
+$out | export-csv $path\Disk_Report.csv -NoTypeInformation -Append
+
+
+
+Get-ADUser email and whenCreated:
+
+$user = "G985965"
+
+$email = Get-ADUser $user -Properties emailAddress|select EmailAddress
+$email = Get-ADUser $user -Properties whenCreated | select whenCreated
